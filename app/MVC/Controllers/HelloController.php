@@ -5,9 +5,9 @@ use Framework\Controller;
 class HelloController extends Controller
 {
     public function index(){
-        return $this->view('index.php',['name'=>'Мохирев']);
+        return $this->view('index.php',['name'=>'Иванов']);
     }
-    public function data(){
-        return $this->view('data.php',['name'=>'Мохирев','login'=>'dvmohirev']);
+    public function data($user_name, $group_name){
+        return $this->view('data.php',['name'=>$user_name,'group'=>$group_name]);
     }
 }
