@@ -1,0 +1,16 @@
+{
+    "name": "mokhi/ourphpframework",
+    "description": "\"autoload\": {",
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "framework",
+            "App\\": "app"
+        },
+        "files": [
+            "app/config.php",
+            "app/routes.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
