@@ -19,8 +19,8 @@ class Router
                 $exec_route = $route;
             }
         }
-        var_dump($exec_route->getParams());
-        var_dump($exec_route->getMask());
+        //var_dump($exec_route->getParams());
+        //var_dump($exec_route->getMask());
         if($exec_route){
             $action = explode('@',$exec_route->getAction());
             if (isset($action[0]) && isset($action[1])){
